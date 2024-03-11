@@ -26,20 +26,7 @@
     <span class="pl-c1">REQUIRE</span>( <span class="pl-c1">factorial</span>( <span class="pl-c1">3</span>) == <span class="pl-c1">6</span> );
     <span class="pl-c1">REQUIRE</span>( <span class="pl-c1">factorial</span>(<span class="pl-c1">10</span>) == <span class="pl-c1">3'628'800</span> );
 }</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="#include <catch2/catch_test_macros.hpp>
-
-#include <cstdint>
-
-uint32_t factorial( uint32_t number ) {
-    return number <= 1 ? number : factorial(number-1) * number;
-}
-
-TEST_CASE( &quot;Factorials are computed&quot;, &quot;[factorial]&quot; ) {
-    REQUIRE( factorial( 1) == 1 );
-    REQUIRE( factorial( 2) == 2 );
-    REQUIRE( factorial( 3) == 6 );
-    REQUIRE( factorial(10) == 3'628'800 );
-}" tabindex="0" role="button">
+    
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
 </svg>
@@ -71,28 +58,7 @@ TEST_CASE( &quot;Factorials are computed&quot;, &quot;[factorial]&quot; ) {
         <span class="pl-k">return</span> <span class="pl-c1">fibonacci</span>(<span class="pl-c1">25</span>);
     };
 }</pre><div class="zeroclipboard-container">
-    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="#include <catch2/catch_test_macros.hpp>
-#include <catch2/benchmark/catch_benchmark.hpp>
-
-#include <cstdint>
-
-uint64_t fibonacci(uint64_t number) {
-    return number < 2 ? number : fibonacci(number - 1) + fibonacci(number - 2);
-}
-
-TEST_CASE(&quot;Benchmark Fibonacci&quot;, &quot;[!benchmark]&quot;) {
-    REQUIRE(fibonacci(5) == 5);
-
-    REQUIRE(fibonacci(20) == 6'765);
-    BENCHMARK(&quot;fibonacci 20&quot;) {
-        return fibonacci(20);
-    };
-
-    REQUIRE(fibonacci(25) == 75'025);
-    BENCHMARK(&quot;fibonacci 25&quot;) {
-        return fibonacci(25);
-    };
-}" tabindex="0" role="button">
+   
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
     <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
 </svg>
